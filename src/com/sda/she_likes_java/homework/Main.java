@@ -1,3 +1,5 @@
+package com.sda.she_likes_java.homework;
+//packages use reverse domain names because they identify our files in global domain way
 import java.util.Scanner;
 
 public class Main {
