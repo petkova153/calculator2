@@ -7,5 +7,10 @@ public class IntegerRanges {
         System.out.println("Ranges");
         System.out.println("Min number is " + Integer.MIN_VALUE);
         System.out.println("Max number is " + Integer.MAX_VALUE);
+
+        System.out.println("See how long look like");
+        System.out.println("Ranges");
+        System.out.println("Min number is " + Long.MIN_VALUE);
+        System.out.println("Max number is " + Long.MAX_VALUE);
     }
 }
