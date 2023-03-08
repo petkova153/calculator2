@@ -12,5 +12,15 @@ public class IntegerRanges {
         System.out.println("Ranges for long");
         System.out.println("Min number is " + Long.MIN_VALUE);
         System.out.println("Max number is " + Long.MAX_VALUE);
+
+        System.out.println("See how short look like");
+        System.out.println("Ranges for short");
+        System.out.println("Min number is " + Short.MIN_VALUE);
+        System.out.println("Max number is " + Short.MAX_VALUE);
+
+        System.out.println("See how byte look like");
+        System.out.println("Ranges for byte");
+        System.out.println("Min number is " + Byte.MIN_VALUE);
+        System.out.println("Max number is " + Byte.MAX_VALUE);
     }
 }
