@@ -19,12 +19,14 @@ public class BouncerInDiscoV5 {
         age = userInput.nextInt();
         System.out.println("2. What is your height in meters");
         height = userInput.nextDouble();
-        System.out.println("3. Can you sing?");
-        canSing = userInput.hasNextBoolean();
+        System.out.println("3. Can you sing? true/false");
+        canSing = userInput.nextBoolean();
 
         youngBouncer = (age >= 16 && height >= 1.65 && canSing);
         oldBouncer = (age >= 16 || height >= 1.65 || canSing);
-
+        System.out.println(canSing);
+        System.out.println(youngBouncer);
+        System.out.println(oldBouncer);
 
         if (youngBouncer)
         {
