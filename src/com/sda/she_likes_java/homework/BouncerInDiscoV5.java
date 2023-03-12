@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class BouncerInDiscoV5 {
     public static void main(String[] args) {
         int age;
-        double hight;
+        double height;
         boolean canSing;
         Scanner userInput;
         boolean youngBouncer;
         boolean oldBouncer;
-        int attempt;
 
 
         userInput = new Scanner(System.in);
@@ -18,13 +17,13 @@ public class BouncerInDiscoV5 {
         System.out.println("Stop!\nTo let you in answer me those questions 3:\n");
         System.out.println("1. What is your age");
         age = userInput.nextInt();
-        System.out.println("2. What is your hight in meters");
-        hight = userInput.nextDouble();
+        System.out.println("2. What is your height in meters");
+        height = userInput.nextDouble();
         System.out.println("3. Can you sing?");
-        canSing = userInput.hasNext();
+        canSing = userInput.hasNextBoolean();
 
-        youngBouncer = (age >= 16 && hight >= 165 && canSing);
-        oldBouncer = (age >= 16 || hight >= 165 || canSing);
+        youngBouncer = (age >= 16 && height >= 1.65 && canSing);
+        oldBouncer = (age >= 16 || height >= 1.65 || canSing);
 
 
         if (youngBouncer)
@@ -33,7 +32,8 @@ public class BouncerInDiscoV5 {
         }
         else
         {
-            System.out.println("You can't enter. Better luck next time.");
+            System.out.println("You can't enter. Better luck next time.\n");
+            System.out.println("\n...\n");
             System.out.println("Trying again with the old bouncer.");
             if (oldBouncer)
             {
