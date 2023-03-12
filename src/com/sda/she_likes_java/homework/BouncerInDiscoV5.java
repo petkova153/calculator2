@@ -26,23 +26,22 @@ public class BouncerInDiscoV5 {
         youngBouncer = (age >= 16 && hight >= 165 && canSing);
         oldBouncer = (age >= 16 || hight >= 165 || canSing);
 
-        for (attempt = 1; attempt <= 2; attempt++)
+
+        if (youngBouncer)
         {
-            if (youngBouncer)
+            System.out.println("Welcome in! Please enjoy the event. :)");
+        }
+        else
+        {
+            System.out.println("You can't enter. Better luck next time.");
+            System.out.println("Trying again with the old bouncer.");
+            if (oldBouncer)
             {
-                System.out.println("Welcome in! Please enjoy the event. :)");
+                System.out.println("Welcome in my child!");
             }
             else
             {
-                System.out.println("You can't enter. Better luck next time.");
-                if (oldBouncer)
-                {
-                    System.out.println("Welcome in my child!");
-                }
-                else
-                {
-                    System.out.println("You can't fool the old fox.");
-                }
+                System.out.println("You can't fool the old fox.");
             }
         }
     }
