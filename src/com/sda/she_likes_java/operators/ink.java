@@ -31,7 +31,10 @@ public class ink {
         four = one++;
         System.out.println(one);
         System.out.println("postincrementation is going to assign the current " +
-                "value of one and late will increment" + four);
+                "value of one and late will increment " + four);
 
+        four = ++one;
+        System.out.println("preincrementation first increments and then uses value in assignment " + four);
+        System.out.println("one " + one);
     }
 }
