@@ -11,11 +11,13 @@ public class BouncersWithWhileAndRandom {
         int age;
         int height;
         int rand;
+        int i;
 
         System.out.println("You decide to go to karaoke night in the nearby club.");
         System.out.println("In order to get in you need to answer 3 questions about yourself.\n");
         inputField = new Scanner(System.in);
         randomNr = new Random();
+        i = 0;
         do
         {
             System.out.println("How old are you?\n");
@@ -23,6 +25,7 @@ public class BouncersWithWhileAndRandom {
             System.out.println("And how tall are you in cm?\n");
             height = inputField.nextInt();
             rand = randomNr.nextInt();
+            //System.out.println(rand);
             if (rand % 3 > 0)
             {
                 isInTheClub = YoungBouncer(age, height, inputField);
@@ -31,7 +34,13 @@ public class BouncersWithWhileAndRandom {
             {
                 isInTheClub = OldBouncer(age, height, inputField);
             }
-        } while (isInTheClub == 0);
+            if (i < 7 && isInTheClub == 0)
+            {
+                System.out.println("You try your luck again.");
+            } else if (i == 7 && isInTheClub == 0) {
+                System.out.println("You are tired and give up.");
+            }
+        } while (isInTheClub == 0 && i <= 7);
     }
     public static int YoungBouncer(int age, int height, Scanner inputField)
     {
@@ -47,7 +56,7 @@ public class BouncersWithWhileAndRandom {
                 return (1);
             }
         }
-        System.out.println("Go home and better luck next time");
+        System.out.println("Go home and better luck next time\n");
         return (0);
     }
     public static int OldBouncer(int age, int height, Scanner inputField)
