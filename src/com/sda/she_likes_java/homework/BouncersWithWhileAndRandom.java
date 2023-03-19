@@ -16,13 +16,13 @@ public class BouncersWithWhileAndRandom {
         System.out.println("In order to get in you need to answer 3 questions about yourself.\n");
         inputField = new Scanner(System.in);
         randomNr = new Random();
-        rand = randomNr.nextInt();
         do
         {
             System.out.println("How old are you?\n");
             age = inputField.nextInt();
             System.out.println("And how tall are you in cm?\n");
             height = inputField.nextInt();
+            rand = randomNr.nextInt();
             if (rand % 3 > 0)
             {
                 isInTheClub = YoungBouncer(age, height, inputField);
