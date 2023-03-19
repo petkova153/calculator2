@@ -36,6 +36,7 @@ public class BouncersWithWhileAndRandom {
     public static int YoungBouncer(int age, int height, Scanner inputField)
     {
         boolean canSing;
+        System.out.println("You got to the strict young bouncer.\n");
         if (age >= 18 && height >= 175)
         {
             System.out.println("Can you even sing?\n");
@@ -52,6 +53,7 @@ public class BouncersWithWhileAndRandom {
     public static int OldBouncer(int age, int height, Scanner inputField)
     {
         boolean canSing;
+        System.out.println("Lucky you! You ended up at the old bouncer.\n");
         System.out.println("Can you even sing?\n");
         canSing = inputField.nextBoolean();
         if (age >= 18 || height >= 175 || canSing)
