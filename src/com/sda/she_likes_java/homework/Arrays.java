@@ -13,7 +13,7 @@ public class Arrays {
 
         System.out.println("your array is:\n");
         System.out.println("with total length of " + arrayOfIx3.length);
-        for (i = 0; i <= 99; i++)
+        for (i = 0; i < arrayOfIx3.length; i++)
         {
             System.out.println("index nr " + i + ": " + arrayOfIx3[i]);
         }
