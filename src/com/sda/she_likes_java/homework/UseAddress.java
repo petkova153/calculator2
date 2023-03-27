@@ -29,5 +29,6 @@ public class UseAddress {
                 recipientAddress.city + "\n" +
                 recipientAddress.street + "\n"+
                 recipientAddress.postalCode);
+        System.out.println(myAddress);
     }
 }

@@ -5,4 +5,14 @@ public class Address {
     String city;
     String street;
     int postalCode;
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", postalCode=" + postalCode +
+                '}';
+    }
 }
