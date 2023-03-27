@@ -1,6 +1,6 @@
-package com.sda.she_likes_java.classes;
+package com.sda.she_likes_java.homework.ex15;
 
-public class Person {
+public class PersonInHomework {
     @Override
     public String toString() {
         return "Person{" +
