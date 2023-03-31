@@ -8,5 +8,20 @@ public class HouseExample {
         System.out.println("I need more bathrooms");
         myhouse.setNumberOfBathrooms(2);
         System.out.println("The number of bathrooms is now " + myhouse.getNumberOfBathrooms());
+
+        System.out.println("=====================================");
+        HouseOwner wife;
+        HouseOwner husband;
+
+        wife = new HouseOwner("Marry", myhouse);
+        husband = new HouseOwner("Max", myhouse);
+        wife.getHouse().setNumberOfBathrooms(3);
+        System.out.println("The number of bathrooms now is " + myhouse.getNumberOfBathrooms());
+
+        husband.getHouse().setNumberOfBathrooms(1);
+        System.out.println("The number of bathrooms now is " + myhouse.getNumberOfBathrooms());
+
+        System.out.println(wife);
+        System.out.println(husband);
     }
 }
