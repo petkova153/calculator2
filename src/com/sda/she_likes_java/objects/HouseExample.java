@@ -23,5 +23,11 @@ public class HouseExample {
 
         System.out.println(wife);
         System.out.println(husband);
+        myhouse = new Home(1,1);
+        System.out.println(wife);
+        System.out.println(husband);
+        System.out.println("Wife gets a new house");
+        wife.setHouse(myhouse);
+        System.out.println(wife);
     }
 }
