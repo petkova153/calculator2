@@ -7,5 +7,10 @@ public class ImmutableString {
         name2 = name.concat(" Same");
         System.out.printf("Name was :" + name);
         System.out.println("\nName is now: " + name2);
+
+        StringBuilder friendsname = new StringBuilder("Friend1");
+        friendsname.append(" GoodFriend");
+        System.out.printf("\n\nWhen you concatinate in Stringbuilder you can actually modify" +
+                "the string just as: " + friendsname);
     }
 }
