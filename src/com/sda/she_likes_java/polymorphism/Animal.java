@@ -5,5 +5,7 @@ public class Animal {
         System.out.printf("The sound of the animal is");
     }
 
-
+    public void move(){
+        System.out.printf("playing");
+    }
 }
