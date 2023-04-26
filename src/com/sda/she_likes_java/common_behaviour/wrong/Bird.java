@@ -6,7 +6,4 @@ public class Bird extends Animal{
         System.out.println("birds go rarely");
     }
 
-    public void fly() {
-        System.out.println("birds certainly fly");
-    }
 }
