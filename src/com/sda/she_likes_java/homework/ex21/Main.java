@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Vehicle ship = new Ship();
         ship.moves();
-        ((Ship)ship).swim();
+        ((Floating)ship).swim();
     }
 }
