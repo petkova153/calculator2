@@ -17,5 +17,7 @@ public class Main {
         scherchas2.swim();
         Object objectTiger = new Tiger();
         // cannot call go() and swim() - they are not visible here
+        Superman supersuper = new Superman();
+        supersuper.fly();
     }
 }
