@@ -22,7 +22,6 @@ public class ListMain {
         System.out.println("lets see it now: " + personFromList.get(0));
         List<Car> newCarList = new ArrayList<>();
         newCarList.add(new Car("blue"));
-        personFromList.add(new Car("green"));
     }
 
 }
