@@ -18,5 +18,4 @@ public class CartList {
         System.out.println("The items in your basket are: " + items);
     }
 
-    public void
 }
