@@ -16,5 +16,19 @@ public class Main {
 //pants that belong to a person
         Map<Person, Pants> personPants = new HashMap<>();
         personPants.put(new Person("Best", "Friend"), new Pants("decent","cotton"));
+
+        PrintMyJeans(myPants);
+    }
+
+    public static void PrintMyJeans(Map<String, Pants> pantsMap) {
+        System.out.println("Check what is stored in the map");
+        System.out.println(pantsMap.get("best"));
+        System.out.println(pantsMap.get("worst"));
+
+        // Map.Entry represent key + value at once
+        for (Map.Entry<String, Pants> item : pantsMap.entrySet()) {
+            System.out.println("Key: " + item.getKey());
+            System.out.println("Value: " + item.getValue());
+        }
     }
 }
