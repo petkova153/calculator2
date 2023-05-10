@@ -1,5 +1,7 @@
 package com.sda.she_likes_java.collections.lists;
 
+import com.sda.she_likes_java.collections.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,9 +12,11 @@ public class ListEx2 {
         names.add("Bird");
         names.add("Bella");
         names.add(2, "Bella D.");
+
         PrintNames(names);
         printOnlySomeNames(names);
-
+        addName(names);
+        PrintNames(names);
     }
     public static void PrintNames(List<String> namePrints){
         System.out.println(namePrints);
@@ -24,5 +28,12 @@ public class ListEx2 {
             System.out.println("name is: " + names.get(index));
         }
     }
+//add name
+    public static void addName(List<String> names){
+        names.add("BoomBoom");
+    }
 
+    public static List<Person> findPersonsByName(List<Person> persons, String nameToFind){
+        return null;
+    }
 }
