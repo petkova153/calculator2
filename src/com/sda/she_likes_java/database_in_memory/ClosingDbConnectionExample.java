@@ -5,11 +5,6 @@ import java.sql.SQLException;
 
 public class ClosingDbConnectionExample {
     public static void main(String[] args) {
-//        String name = null;
-//        System.out.println(name.length());
-//
-//        handleString("abcd");
-//        handleString(null);
         Connection connection = null;
         try {
             connection = DbConnectionUtils.getConnectionRiskyWay(DbCredentials.url,
@@ -27,11 +22,21 @@ public class ClosingDbConnectionExample {
         }
 
         //
-    }
 
-    private static void handleString(String string) {
-        if (string != null) {
-            System.out.println("String length is: " + string.length());
+        //better way to test connection as above just in less code
+        System.out.println("Now let's use better way to close connection - available since Java 7");
+        try {
+            connection = DbConnectionUtils.getConnectionRiskyWay(DbCredentials.url,
+                    DbCredentials.username, DbCredentials.password);
+        } catch (SQLException e) {
+            System.out.println("Some exception: " + e);
         }
     }
+        private static void handleString (String str){
+            if (str != null) {
+                System.out.println("String length is: " + str.length());
+            }
+        }
+
 }
+
