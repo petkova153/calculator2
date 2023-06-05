@@ -29,6 +29,17 @@ public class LambdaExercises {
         justRun(() -> {
             System.out.println("in place:)");
         });
+
+        Walker johny = () -> {};
+
+        Adder longVersion = (int first,int second) -> {
+            return first+second;
+        };
+        Adder shorterVersion = (first, second) -> {
+            return first+second;
+        };
+
+        Adder shortestVersion = (first, second) -> first+second;
     }
     public static void justRun(Jogging jog){
         jog.run();
