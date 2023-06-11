@@ -1,6 +1,7 @@
-package com.sda.she_likes_java.project.exception;
+package com.sda.she_likes_java.final_project.exception;
 
-public class InexperiencedUserException extends Exception{
+public class InexperiencedUserException extends Exception {
+
     public InexperiencedUserException() {
     }
 
